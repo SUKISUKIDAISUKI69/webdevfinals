@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polytechnic University of The Philippines</title>
+    <link rel="icon" href="https://cdn.pup.edu.ph/img/symbols/logo88x88.png" type="image/x-icon">
+    <style>
+ .upbannerpiyupi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #800000;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -40px;
+}
+
+.icon-thing {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.icon-luiz {
+    width: 50px;
+    height: 50px;
+}
+
+.ren-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.textmarin {
+    font-size: 8px;
+}
+
+.text-jaja {
+    font-size: 14px;
+    color: #ffd700;
+}
+
+body {
+    background-color: rgba(255, 248, 248, 0.41);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid #800000;
+    padding: 20px;
+    margin: auto;
+    max-width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(162, 0, 0, 0.41);
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+}
+
+h2 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 8px;
+    border-top: 3px solid #800000;
+    margin: -20px -20px 20px -20px;
+    margin-bottom: 14px;
+    background-color: #800000;
+    text-align: center;
+    width: 1024px;
+}
+
+.centered-h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 8px;
+    border-top: 3px solid #800000;
+    margin: -20px -20px 20px -20px;
+    margin-bottom: 14px;
+    background-color: #800000;
+    text-align: center;
+}
+
+h4 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-top: 3px solid #800000;
+    margin: -20px -20px 20px -20px;
+    margin-bottom: 14px;
+    background-color: #800000;
+    text-align: left;
+}
+
+select {
+    width: calc(100% - 40px);
+    padding: 6px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #a5a5a5;
+    border-radius: 4px;
+    font-size: 14px;
+    display: block;
+}
+
+.centered-h2 h2 {
+    display: inline-block;
+    border: 2px solid #800000;
+    padding: 10px 20px;
+    border: 4px solid #ffd700;
+    margin-top: 40px;
+}
+
+.checkbox-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-group {
+    width: 24%;
+}
+
+.checkbox-group label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.checkbox-group div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    margin: 0;
+}
+
+form {
+    width: 1000px;
+    margin: 10px;
+}
+
+.personal-details,
+.emergency-details {
+    width: 870px;
+    margin: 40px;
+}
+
+form {
+    border: 8px solid #ffd700;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.personal-details {
+    border: 8px solid #ffd700;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 22px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 1000px;
+    position: relative;
+    z-index: 0;
+}
+
+.emergency-details {
+    border: 8px solid #ffd700;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 1000px;
+}
+
+.personal-details input,
+.emergency-details input {
+    width: calc(100% - 40px);
+    padding: 6px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #a5a5a5;
+    border-radius: 4px;
+    font-size: 14px;
+    display: block;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px 25px;
+    font-size: 19px;
+    background-color: #ffd700;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f7ffa2;
+}
+
+
+.name-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1px;
+}
+
+.column {
+    width: calc(32% - 10px);
+}
+
+.column-1 {
+    width: calc(23% - 10px);
+}
+
+.column-1 input {
+    border: 2px solid #a5a5a5;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.column-1 label {
+    font-size: 17px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.column label,
+.column input {
+    width: 100%;
+}
+
+.part-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.part-2 {
+    width: calc(24% - 10px);
+    margin-bottom: 1px;
+}
+
+.part-2 label,
+.part-2 input,
+.part-2 select {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.part-2 input,
+.part-2 select {
+    margin-bottom: 10px;
+}
+
+form,
+.personal-details,
+.emergency-details {
+    flex: 1;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.name-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+
+.column label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-columns .column {
+    width: calc(33.33% - 10px);
+}
+
+.contact-columns .column:last-child {
+    width: calc(66.66% - 10px);
+}
+
+.contact-columns .column label,
+.contact-columns .column input {
+    width: 100%;
+}
+
+.contact-columns .column input {
+    margin-bottom: -2px;
+}
+
+.info label,
+.info input {
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.info label {
+    margin-top: 2px;
+}
+
+.info-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.info-1 .column {
+    width: calc(50% - 10px);
+    margin-bottom: 1px;
+}
+
+.info-1 label,
+.info-1 input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.info-1 input {
+    margin-bottom: -2px;
+}
+
+#checklist-form-left [name="StudentNumber"] {
+    width: calc(50% - 40px);
+}
+
+.checkbox-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-group1 div {
+    margin-left: -10px;
+    display: left;
+    align-items: center;
+}
+
+
+    </style>
+</head>
+
+
+<body>
+    <div class="centered-h2">
+        </div>
+      <script>
+
+        var images = [
+            'https://i.imgur.com/ZMbwyUM.jpg&quot',
+            'https://i.imgur.com/6FSp1eg.jpg&quot',
+            'https://i.imgur.com/75icZ75.jpg&quot',
+            'https://i.imgur.com/9ckkRvD.jpg&quot'
+        ];
+
+        function changeBackground() {
+            var randomIndex = Math.floor(Math.random() * images.length);
+            var imageUrl = images[randomIndex];
+            document.body.style.backgroundImage = "url('" + imageUrl + "')";
+        }
+        changeBackground();
+        setInterval(changeBackground, 14000);
+    </script>
+
+    <div class="upbannerpiyupi">
+        <a href="https://www.pup.edu.ph/">
+            <div class="icon-thing">
+                <img class="icon-luiz" src="https://cdn.pup.edu.ph/img/symbols/logo88x88.png" alt="PUP Logo">
+            </div>
+        </a>
+    <div class="ren-container">
+        <div class="textmarin">Republic of the Philippines</div>
+        <div class="text-jaja">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</div>
+        <div class="textmarin">Office of the Vice President for Student Affairs and Services</div>
+        <div class="text-jaja">Office of the Student Services</div>
+    </div>
+</div>
+
+
+    <div class="container">
+        <center>
+            <h2>APPLICATION FOR NEW / REPLACEMENT OF IDENTIFICATION CARD</h2>
+        </center>
+
+<form id="checklist-form-one" action="https://script.google.com/macros/s/AKfycbzO_dZ1VrVKpGwGZaGPMYSCVZMGlx6powGqkSr2RAMpgJS8rSXKHG4vOW18P7pgVZyN/exec" method='post'>
+
+    <div class="banner">
+        <h4>ID STATUS</h4>
+        <p>Please select your ID Status and your Institution Level.</p>
+    </div>
+    <div class="checkbox-columns">
+
+        <div class="checkbox-group">
+            <div>
+                <input type="checkbox" name="transferee" id="item1-left" value="Transferee" placeholder='Transferee' />
+                <label for="item1-left">Transferee</label>
+            </div>
+            <div>
+               <input type="checkbox" name="latef" id="item2-left" value="Late Filling" />
+                <label for="item2-left">Late Filling</label>
+            </div>
+            <div>
+                <input type="checkbox" name="oldid" id="item3-left" value="Old ID" />
+                <label for="item3-left">Old ID</label>
+            </div>
+        </div>
+        <div class="checkbox-group">
+            <div>
+                <input type="checkbox"  name="damaged" id="item4-left" value="Damaged" />
+                <label for="item4-left">Damaged</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="correction"  id="item5-left" value="Correction Of Entry" />
+                <label for="item5-left">Correction Of Entry</label>
+            </div>
+            <div>
+                <input type="checkbox" name="shiftee"  id="item6-left" value="Shiftee" />
+                <label for="item6-left">Shiftee</label>
+            </div>
+        </div>
+        <div class="checkbox-group1">
+                <div>
+                    <input type="checkbox" name="lhs" id="item1-right" value="LHS" />
+                    <label for="item1-right">LHS</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="shs" id="item2-right" value="SHS" />
+                    <label for="item2-right">SHS</label>
+                </div>
+            <div>
+                <input type="checkbox" name="undergrad" id="item3-right" value="Undergrad" />
+                <label for="item3-right">Undergrad</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="col" id="item4-right" value="College of Law" />
+                <label for="item4-right">College of Law</label>
+            </div>
+        </div>
+        <div class="checkbox-group">
+            <div>
+                <input type="checkbox" name="gradschool" id="item5-right" value="Graduate School" />
+                <label for="item5-right">Graduate School</label>
+            </div>
+            <div>
+                <input type="checkbox" name="ou" id="item6-right" value="Open University" />
+                <label for="item6-right">Open University</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="iot" id="item7-right" value="Institute of Technology" />
+                <label for="item7-right">Institute of Technology</label>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="personal-details">
+                <h3>ID INFORMATION</h3>
+                <div class="column-1">
+                    <label for="StudentNumber">Student Number:</label>
+                    <input type="text" name="StudentNumber" pattern="^20\d{2}-\d{5}-[A-Z]{2}-\d$" required placeholder="XXXX-XXXXX-MN-X" />
+                </div>
+
+                <div class="name-columns">
+                    <div class="column">
+                        <label for="FirstName">First Name:</label>
+                        <input type="text" name="FirstName" required />
+                    </div>
+                    <div class="column">
+                        <label for="MiddleName">Middle Name:</label>
+                        <input type="text" name="MiddleName" required />
+                    </div>
+                    <div class="column">
+                        <label for="LastName">Last Name:</label>
+                        <input type="text" name="LastName" required />
+                    </div>
+                </div>
+
+                <div class="part-1">
+                    <div class="part-2">
+                        <label for="Gender">Select Gender:</label>
+                        <select id="Gender" name="Gender" required>
+                            <option value="" selected disabled>Select an option</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    <div class="part-2">
+                        <label for="DateOfBirth">Date of Birth:</label>
+                        <input type="date" name="DateOfBirth" required />
+                    </div>
+                    <div class="part-2">
+                        <label for="College">College:</label>
+                        <input type="text" name="College" required />
+                    </div>
+                    <div class="part-2">
+                        <label for="CourseYearSection">Course, Yr. & Section:</label>
+                        <input type="text" name="CourseYearSection" required />
+                    </div>
+                </div>
+                <div class="info">
+                    <label for="HomeAddress">Home Address:</label>
+                    <input type="text" name="HomeAddress" required />
+
+
+                    <div class="info-1">
+                        <div class="column">
+                            <label for="PhoneMobile">Phone/Mobile No.:</label>
+                            <input type="text" name="PhoneMobile" required />
+                        </div>
+                        <div class="column">
+                            <label for="EmailAddress">Email Address:</label>
+                            <input type="text" name="EmailAddress" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address" required />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="emergency-details">
+                <h4>In case of emergency, please notify:</h4>
+                <div class="name-columns">
+                    <div class="column">
+                        <label for="EmergencyFirstName">First Name:</label>
+                        <input type="text" name="EmergencyFirstName" required />
+                    </div>
+                    <div class="column">
+                        <label for="EmergencyMiddleName">Middle Name:</label>
+                        <input type="text" name="EmergencyMiddleName" required />
+                    </div>
+                    <div class="column">
+                        <label for="EmergencyLastName">Last Name:</label>
+                        <input type="text" name="EmergencyLastName" required />
+                    </div>
+                </div>
+                <div class="contact-columns">
+                    <div class="column">
+                        <label for="ContactNumber">Contact Number:</label>
+                        <input type="text" name="ContactNumber" pattern="^\d{11}$" title="Please enter a valid 11-digit contact number" required />
+                    </div>
+                    <div class="column">
+                        <label for="ContactAddress">Contact Address:</label>
+                        <input type="text" name="ContactAddress" required />
+                    </div>
+                </div>
+            </div>
+
+            </form>
+
+
+
+
+
+
+             <div>
+                <button type="button" onclick="downLoad()">Download Form</button>
+            </div>
+
+
+            <div>
+                <button onclick="submitAllForms()">Submit</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script>
+        async function downLoad() {
+
+            const originalWidth = window.innerWidth;
+            const originalHeight = window.innerHeight;
+
+
+            window.innerWidth = 1200;
+            window.innerHeight = 1800;
+
+
+            await new Promise(resolve => setTimeout(resolve, 100));
+
+
+            const canvas = await html2canvas(document.body);
+
+
+            const imgData = canvas.toDataURL('image/png');
+
+
+            const link = document.createElement('a');
+            link.href = imgData;
+            link.download = 'PUPIDForm.png';
+
+
+            link.click();
+
+
+            window.innerWidth = originalWidth;
+            window.innerHeight = originalHeight;
+        }
+
+
+
+        </script>
+
+
+
+    <script>
+        function submitAllForms() {
+            document.getElementById('checklist-form-one').submit();
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
